@@ -3,7 +3,7 @@ import base64
 def xor_encrypt_decrypt(data, key):
     return ''.join(chr(ord(c) ^ ord(k)) for c, k in zip(data, key * (len(data) // len(key) + 1)))
 
-with open(r'E:\telebot\nilesh.py.enc', 'r') as file:
+with open(r'nilesh.py.enc', 'r') as file:
     encrypted_script_base64 = file.read()
 
 key = '@NileshModzOwner' 
